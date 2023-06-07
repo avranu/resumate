@@ -30,11 +30,12 @@ services:
     volumes:
       - ./frontend:/resumate/frontend
     command: >
-      bash -c "npm install && ng serve --host 0.0.0.0 --port 4200"
+      bash -c "npm install -g @angular/cli && npm install && ng serve --host 0.0.0.0 --port 4200"
     ports:
       - "4200:4200"
     networks:
       - resumate_network
+
 
 networks:
   resumate_network:
