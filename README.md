@@ -27,7 +27,7 @@ Resumate is a comprehensive job search platform developed using Django for the b
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/resumate.git
+git clone https://github.com/avranu/resumate.git
 ```
 
 2. Install the required dependencies:
