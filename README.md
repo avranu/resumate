@@ -1,3 +1,7 @@
+# Disclaimer
+
+**WARNING**: This is alpha software. It is primarily being developed to test the ability of AI Development tools in creating, modifying, and maintaining an entire project. There is no guarantee this project works as described, or that it will not cause damage to your system. You should almost certainly not use it until this message is removed from the readme. 
+
 # Resumate
 
 Resumate is a comprehensive job search platform developed using Django for the backend, Angular for the frontend, and Postgres for the database. It adheres to modern web standards and best practices, using Sass, TypeScript, and Python 3.11 with strict typing.
@@ -23,7 +27,7 @@ Resumate is a comprehensive job search platform developed using Django for the b
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/resumate.git
+git clone https://github.com/avranu/resumate.git
 ```
 
 2. Install the required dependencies:
