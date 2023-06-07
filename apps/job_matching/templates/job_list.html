@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Job List</h1>
+    <div class="row">
+        {% for job in jobs %}
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">{{ job.title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ job.company }}</h6>
+                    <p class="card-text">{{ job.description|truncatechars:150 }}</p>
+                    <p class="card-text">Location: {{ job.location }}</p>
+                    <p class="card-text">Salary: {{ job.salary }}</p>
+                    <p class="card-text">Score: {{ job.score }}</p>
+                    <a href="{% url 'job_details' job.id %}" class="card-link">View Details</a>
+                    <button class="btn btn-primary applyButton" data-job-id="{{ job.id }}">Apply</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

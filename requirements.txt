@@ -1,0 +1,12 @@
+Django>=4.1.2
+djangorestframework>=3.13.1
+django-cors-headers>=3.10.1
+django-allauth>=0.48.0
+django-allauth-social>=0.0.5
+psycopg2>=2.9.3
+celery>=5.2.3
+beautifulsoup4>=4.10.0
+requests>=2.27.1
+openai>=0.27.0
+python-dotenv>=0.19.2
+gunicorn>=20.1.0

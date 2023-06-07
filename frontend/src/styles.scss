@@ -1,0 +1,74 @@
+@import 'variables';
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  color: $heading-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+button {
+  background-color: $button-background-color;
+  color: $button-text-color;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $button-hover-background-color;
+  }
+}
+
+input, select, textarea {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid $input-border-color;
+  border-radius: 4px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.error-message {
+  color: $error-color;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: $success-color;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Custom styles for specific components */
+@import 'profile';
+@import 'job_list';
+@import 'application_history';

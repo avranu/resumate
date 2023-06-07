@@ -1,0 +1,46 @@
+<div class="container">
+  <h1>User Profile</h1>
+  <form (submit)="updateUserProfile()">
+    <div class="form-group">
+      <label for="nameInput">Name</label>
+      <input type="text" class="form-control" id="nameInput" [(ngModel)]="userProfile.name">
+    </div>
+    <div class="form-group">
+      <label for="addressInput">Address</label>
+      <input type="text" class="form-control" id="addressInput" [(ngModel)]="userProfile.address">
+    </div>
+    <div class="form-group">
+      <label for="emailInput">Email</label>
+      <input type="email" class="form-control" id="emailInput" [(ngModel)]="userProfile.email">
+    </div>
+    <div class="form-group">
+      <label for="phoneNumberInput">Phone Number</label>
+      <input type="tel" class="form-control" id="phoneNumberInput" [(ngModel)]="userProfile.phone_number">
+    </div>
+    <div class="form-group">
+      <label for="minSalaryInput">Minimum Salary Expectation</label>
+      <input type="number" class="form-control" id="minSalaryInput" [(ngModel)]="userProfile.min_salary">
+    </div>
+    <div class="form-group">
+      <label for="maxSalaryInput">Maximum Salary Expectation</label>
+      <input type="number" class="form-control" id="maxSalaryInput" [(ngModel)]="userProfile.max_salary">
+    </div>
+    <div class="form-group">
+      <label for="preferredLocationsSelect">Preferred Job Locations</label>
+      <select multiple class="form-control" id="preferredLocationsSelect" [(ngModel)]="userProfile.preferred_locations">
+        <!-- Add options for locations here -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="locationProximitySlider">Job Location Proximity</label>
+      <input type="range" class="form-control-range" id="locationProximitySlider" [(ngModel)]="userProfile.location_proximity">
+    </div>
+    <div class="form-group">
+      <label for="resumeUpload">Upload Resume</label>
+      <input type="file" class="form-control-file" id="resumeUpload" (change)="uploadResume($event)">
+    </div>
+    <button type="submit" class="btn btn-primary">Update Profile</button>
+  </form>
+  <hr>
+  <button class="btn btn-secondary" (click)="importFromLinkedIn()">Import from LinkedIn</button>
+</div>
