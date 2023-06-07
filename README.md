@@ -1,6 +1,6 @@
 # Disclaimer
 
-''WARNING'': This is alpha software. It is primarily being developed to test the ability of AI Development tools in creating, modifying, and maintaining an entire project. There is no guarantee this project works as described, or that it will not cause damage to your system. You should almost certainly not use it until this message is removed from the readme. 
+**WARNING**: This is alpha software. It is primarily being developed to test the ability of AI Development tools in creating, modifying, and maintaining an entire project. There is no guarantee this project works as described, or that it will not cause damage to your system. You should almost certainly not use it until this message is removed from the readme. 
 
 # Resumate
 
